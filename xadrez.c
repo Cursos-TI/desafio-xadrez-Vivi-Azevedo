@@ -1,32 +1,37 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main (){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+// Declaração de constantes e variaveis.
+    const int torre = 5, bispo = 5, rainha = 8;
+    int i=1 , i2=1 , i3;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    //Movimentação da peça torre 5 casas a direita.
+    printf("*Movimentação da peça Torre*\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    while (i <= torre){
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+        printf("Direita\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+        i++;    
+    } 
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    //Movimentação da peça Bispo 5 casa para cima e direita,
+    printf("\n*movimetação da Peça Bispo*\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    do {
+        printf("Cima, Direita\n");
+        i2++;
+
+    } while (i2<= bispo);
+
+    //Movimentação da Peça Rainha 8 casas para esquerda.
+
+    printf ("\n*Movimentação da peça Rainha*\n");
+
+    for (i3 = 1; i3<=rainha; i3++){
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
